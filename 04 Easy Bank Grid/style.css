@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+:root{
+    --main-color:linear-gradient(90deg,#31D06B,#2CBACA);
+    --footer-color:#1c1a40;
+    --font-weight:400;
+}
+a{
+    text-decoration: none;
+}
+.text-muted {
+    color: #98a1b1;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    box-shadow: 0px 0px 2px grey;
+    z-index: 100;
+    background: #fff;
+    position: relative;
+}
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 70px;
+    align-items: center;
+}
+.navbar-ul{
+    display: flex;
+    list-style: none;
+    justify-self: center;
+}
+.nav-link{
+    color: black;
+    opacity: .7;
+    padding: 5px 10px;
+}
+.nav-link:hover{
+    opacity: 1;
+    color: #31D06B;
+}
+.request-invite{
+    justify-self: end;
+    background: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    transition: .3s;
+}
+.request-invite:hover{
+    filter: brightness(110%);
+}
+.my-content{
+    height: 600px;
+    background: #fafafa;
+    position: relative;
+    padding-left: 160px;
+}
+.my-content-img{
+    height: 100%;
+    background: url(images/bg-intro-desktop.svg);
+    background-size: 780px;
+    background-repeat: no-repeat;
+    
+}
+.my-content-img img{
+    height: 850px;
+}
+.my-content .containers{
+    position: relative;
+    top: -100px;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.my-content-content{
+    width: 500px;
+}
+.my-content-content h1{
+    font-size: 50px;
+    font-weight: var(--font-weight);
+}
+.my-content-content .request-invite{
+    margin-top: 30px;
+    display: inline-block;
+}
+.easybank-options{
+    height: 700px;
+    padding: 100px 0px;
+    background: #F4F5F7;
+}
+.easybank-options .container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 200px 300px;
+}
+.easybank-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.eb-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 250px;
+    width: 25%;
+}
+.eb-card h2{
+    font-weight: var(--font-weight);
+}
+.eb-card .text-muted{
+    font-size: 15px;
+}
+.articles{
+    padding: 78px 0px;
+    background: #fafafa;
+    height: 700px;
+}
+.articles .container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 100px 300px;
+}
+.articles-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.ar-card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: fit-content;
+    width: 23%;
+    border-radius: 5px;
+    background: #fff;
+}
+.ar-card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+}
+.ar-card .card-content{
+    padding: 25px;
+}
+.article-heading{
+    font-size: 50px;
+    font-weight: var(--font-weight);
+}
+.ar-card .card-content .name{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.ar-card .card-content h3{
+    font-weight: var(--font-weight);
+}
+.ar-card .card-content .detail{
+    font-size: 15px;
+    margin-top: 10px;
+}
+footer{
+    background: var(--footer-color);
+    padding: 50px 0px;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    color: white;
+    opacity: .7;
+    margin-bottom: 15px;
+    display: block;
+    transition: .4s;
+}
+footer ul li a:hover{
+    opacity: 1;
+    color: #31D06B;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.footer-logo .icons i{
+    padding-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.footer-logo .icons i:hover{
+    color: #31D06B;
+    cursor: pointer;
+    
+}
+.footer-logo a{
+    background: white;
+    padding: 10px;
+    display: inline-block;
+}
+footer .copy-rights{
+    justify-self: center;
+    align-self: center;
+}
+.copy-rights p{
+    margin-top: 30px;
+}
+.menu-bar .fa-bars{
+    display: none;
+}
+@media (min-width:1369px) and (max-width:1405px) {
+    .articles{
+        height: 750px;
+    }
+}
+@media (min-width:1289px) and (max-width:1370px) {
+    .my-content-img img{
+        height: 750px;
+    }   
+    .articles-cards{
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    .ar-card{
+        width: 45%;
+        margin-top: 20px;
+    } 
+    .ar-card img{
+        height: 300px;
+    } 
+    .articles{
+        height: 1400px;
+    }
+}
+@media (min-width:1208px) and (max-width:1288px) {
+    .my-content{
+        height: 500px;
+    }
+    .my-content-img img{
+        height: 650px;
+    }
+    .articles-cards{
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    .ar-card{
+        width: 45%;
+        margin-top: 20px;
+    }   
+    .ar-card img{
+        height: 300px;
+    }
+    .articles{
+        height: 1400px;
+    }
+}
+@media (min-width:1067px) and (max-width:1208px) {
+    .my-content{
+        height: 500px;
+    }
+    .my-content-img img{
+        height: 600px;
+    } 
+    .my-content-content{
+        width: 400px;
+    }
+    .easybank-cards{
+        flex-wrap: wrap;
+        gap: 5%;
+    }    
+    .eb-card{
+        width: 45%;
+    }
+    .easybank-options{
+        height: 900px;
+    }
+    .articles-cards{
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    .ar-card{
+        width: 45%;
+        margin-top: 20px;
+    }
+    .ar-card img{
+        height: 300px;
+    }
+    .articles{
+        height: 1400px;
+    }
+}
+
+@media screen and (max-width:1066px) {
+    .my-content{
+        padding-left: 0px;
+        height: fit-content;
+    }
+    .my-content-img img{
+        width: 100%;
+        height: auto;
+    }
+    .my-content .containers{
+        grid-template-columns: 100%;
+        height: 100%;
+        justify-items: center;
+        /* align-items: center; */
+    }
+    .my-content-content{
+        order: 1;
+        width: 95%;
+        text-align:center;
+    }
+    .easybank-cards{
+        flex-wrap: wrap;
+        gap: 5%;
+    }  
+    .eb-card{
+        width: 45%;
+    }
+    .easybank-options{
+        height: 900px;
+    }
+    .articles-cards{
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    .ar-card{
+        width: 45%;
+        margin-top: 20px;
+    }
+    .ar-card img{
+        height: 300px;
+    }
+    .articles{
+        height: 1400px;
+    }
+    /* .my-content-img{
+
+    } */
+}
+@media (max-width:900px) {
+    .navbar-ul{
+        position: absolute;
+        right: 0px;
+        top: 30px;
+        box-shadow: 0px 0px 2px grey;
+        background: #fff;
+        display: none;
+        /* order: 2; */
+    }
+    .nav-link{
+        color: black;
+        opacity: .7;
+        padding: 5px 10px;
+        display: block;
+    }
+    .menu-container{
+        order:2;
+        justify-self: end;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu-bar .fa-bars{
+        display: inline-block;
+    }
+    .menu-bar:hover .navbar-ul{
+        display: block !important;
+        color: red;
+    }
+    .navbar-brand{
+        order:1
+    }
+    header nav{
+        grid-template-columns: 1fr 1fr;
+    }
+    nav .request-invite{
+        display: none;
+    }
+    .articles-cards{
+        flex-wrap: wrap;
+    }
+    .ar-card{
+        width: 95%;
+        margin-top: 20px;
+    }
+    .ar-card img{
+        height: 300px;
+    }
+    .articles{
+        height: 2350px;
+    }
+    footer .container{
+        grid-template-columns: 100%;
+        justify-items: center;
+        text-align: center;
+    }
+    .footer-logo .icons {
+        margin:20px 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .easybank-cards{
+        flex-wrap: wrap;
+        /* gap: 5%; */
+    }  
+    .eb-card{
+        width: 90%;
+    }
+    .easybank-options{
+        height: 1450px;
+    }
+    .article-heading{
+        font-size: 43px;
+    }
+    .articles{
+        height: 2550px;
+    }
+}
+@media screen and (max-width:474px) {
+    
+    .articles{
+        height: 2700px;
+    }
+}
