@@ -1,0 +1,78 @@
+﻿Note: Please don't edit this doc
+
+
+
+
+
+
+Question 1: Calculate Factorial
+
+
+Factorial of any number n is represented by n! and is equal to 1*2*3*....*(n-1)*n. E.g.-
+4! = 1*2*3*4 = 24
+3! = 3*2*1 = 6
+2! = 2*1 = 2
+Also,
+1! = 1
+0! = 1
+
+
+
+
+Write a program to calculate the factorial of a number.
+
+
+
+
+
+
+
+
+
+
+
+
+Question 2: 
+
+
+Print the following patterns using loop :
+a.
+*
+**
+***
+****
+
+
+b.
+  *  
+ *** 
+*****
+ *** 
+  *  
+
+
+c.
+1010101
+ 10101 
+  101  
+   1   
+
+
+
+Question 3: Calculate the average
+
+
+Write a program that takes integer inputs from the user until he/she presses q ( Ask to press q to quit after every integer input ). Print average and product of all numbers.
+
+
+
+
+
+
+Question 4: Calculate the average
+
+
+Write a program that calculates the average of all elements in the following array/list
+
+
+my_list= [1,22,32,12,55,88,76,54,2,1,22,33,44,5,6,6,7,5,0]
